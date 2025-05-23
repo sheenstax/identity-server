@@ -28,6 +28,8 @@
     <ProjectReference Include="..\Pixel.Identity.Core\Pixel.Identity.Core.csproj" />
     <ProjectReference Include="..\Pixel.Identity.Shared\Pixel.Identity.Shared.csproj" />
     <ProjectReference Include="..\Pixel.Identity.UI.Client\Pixel.Identity.UI.Client.csproj" />
+    <ProjectReference Include="..\Pixel.Identity.Store.Sql.Shared\Pixel.Identity.Store.Sql.Shared.csproj" />
+    <ProjectReference Include="..\Pixel.Identity.Store.PostgreSQL\Pixel.Identity.Store.PostgreSQL.csproj" />
   </ItemGroup>
   <!--Build the plugins project with their outputpath set to $(TargetDir)\Plugins\....-->
   <Target Name="BuildPlugins" AfterTargets="Build">
