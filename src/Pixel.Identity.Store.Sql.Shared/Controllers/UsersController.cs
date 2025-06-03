@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using OpenIddict.Validation.AspNetCore;
 using Pixel.Identity.Core;
 using Pixel.Identity.Core.Controllers;
 
@@ -12,7 +13,7 @@ namespace Pixel.Identity.Store.Sql.Shared.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme)]
     public class UsersController : UsersController<ApplicationUser, Guid>
     {
         /// <summary>
